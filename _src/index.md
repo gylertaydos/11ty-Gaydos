@@ -1,8 +1,6 @@
 ---
 title: Home
 layout: base.njk
+permalink: index.html
 ---
-
-# Hey!
-
-Welcome to my (second) attempt at building a website using the 11ty framework!
+Hello... hi...
