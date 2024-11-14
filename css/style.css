@@ -1,3 +1,61 @@
 body{
+    background: #F9F9F9; /*#F9F9F9 white*/
+    text-align: center;
+    letter-spacing: 1px;
     font-family: "Lucida Console", Lucida, monospace;
+    margin:0;
+}
+
+.grid{
+    display: grid;
+    /* grid-template-columns: repeat(1, 10%); */
+    grid-template-areas:
+        'menu header picture';
+    /* ebb 2024-09-28: I'm adding some grid properties here */
+    grid-auto-flow:column;
+    grid-template-columns: .33fr .33fr .33fr;
+    /* ebb: I use fr units to define the relative proportions of each column,
+     * .25fr is like saying 25% of 100.   */
+}
+
+.item1{
+    grid-area: header;
+}
+
+.item2{
+    grid-area: picture;
+}
+.littlemonkey{
+    height: 98px;
+    width: auto;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5vw;
+}
+
+.item3{
+    grid-area: menu;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    /*background-color: #333;*/
+    text-align: left;
+    font-size: x-large;
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+p{
+    text-align: left;
+    width: 80%;
+    margin: 20px auto;
+}
+
+iframe{
+    margin: auto;
+    width: 45.5vh;
+    height: 25.7vh;
 }
